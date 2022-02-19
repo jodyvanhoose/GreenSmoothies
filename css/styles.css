@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: 'Lato', sans-serif;
+  color: #26AD1A;
+  line-height: 1.5;
+
+}
+
+/* links/a-tags/button styles */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 1rem;
+  background-color: #fff;
+  color: #26AD1A;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: #26AD1A;
+  color: #fff;
+}
+
+/* Heading/navbar */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  background-color: #f4f4f4;
+  color: #26AD1A;
+  position: fixed;
+  width: 100%;
+}
+
+#logo {
+  margin: .5rem;
+  display: flex;
+}
+
+#blender {
+  font-size: 4.1em;
+  display: inline;
+}
+
+#logo h1 {
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: ;
+  /* change to flex for links*/
+  flex-direction: column;
+  width: 100vw;
+  text-align: center;
+}
+
+.navbar-links {
+  display: none;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #26AD1A;
+  padding: 1rem 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: #fff;
+}
+
+#hamburger {
+  position: absolute;
+  top: .20rem;
+  right: 1rem;
+  /* display: none; */
+  border: none;
+  background-color: #f4f4f4;
+  color: #26AD1A;
+  font-size: 55px;
+  cursor: pointer;
+}
+
+/* hero area */
+main {
+  background-color: #e5e5e5;
+  background: url(/img/smoothie.jpg)no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#heroHeading {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem 18rem 0;
+}
+
+#heroHeading h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+#heroHeading .btn {
+  padding: .6rem 1rem;
+  width: 90px;
+  margin-left: 6rem;
+}
+
+/* cards */
+
+.card {
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 1em;
+  color: #333;
+  padding: 1em;
+}
+
+.card:last-of-type {
+  margin-bottom: 0;
+}
+
+.card img {
+  color: #26AD1A;
+  padding: .5em 0 1em 0;
+  font-size: 50px;
+}
+
+.card p {
+  font-size: 1.5em;
+  padding: 0 1em 1em;
+}
+
+/* section-a*/
+.section-b {
+  background-color: #000;
+  background: url(/img/stevia.jpg) no-repeat center center/cover;
+  height: 30em;
+  /* margin: 1em 0; */
+  /* border: 5px solid #e5e5e5; */
+}
+
+.section-b h2 {
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 1.3em;
+}
+
+
+@media (min-width: 600px) {
+
+  .navbar-links ul {
+    flex-direction: row;
+    width: min-content;
+    display: flex;
+  }
+
+  .navbar-links {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .navbar-links li a {
+    padding: 2rem 1.2rem;
+  }
+
+
+}
