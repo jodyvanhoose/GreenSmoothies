@@ -74,7 +74,7 @@ a {
 .navbar-links ul {
   margin: 0;
   padding: 0;
-  display: ;
+  display: flex;
   /* change to flex for links*/
   flex-direction: column;
   width: 100vw;
@@ -184,6 +184,63 @@ main {
   font-size: 2.5em;
   padding-top: 1.3em;
 }
+
+/* Menu */
+#menu {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: #e5e5e5;
+}
+
+#menu h2 {
+  grid-column: 2 / span 10;
+  text-align: center;
+  border-bottom: 1px solid #26AD1A;
+  font-size: 2.5rem;
+}
+
+.menu-group {
+  grid-column: 3 / span 8;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item>h3 {
+  font-size: 1rem;
+}
+
+.menu-group p {
+  align-self: flex-end;
+  font-size: 1rem;
+}
+
+.menu-item p {
+  font-size: .8rem;
+}
+
+
+#current-specials {
+  grid-column: 1 / span 12;
+  background: url(/img/beachSmoothie.jpg) no-repeat center center/cover;
+  height: 30rem;
+}
+
+#current-specials>h2 {
+  background-color: #26AD1A;
+  color: #fff;
+  padding: 1.5rem 0;
+}
+
+
+
+
+
+
+
 
 
 @media (min-width: 600px) {
