@@ -203,19 +203,20 @@ main {
 }
 
 .menu-group {
-  grid-column: 3 / span 8;
+  grid-column: 2 / span 10;
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
 }
 
 .menu-item>h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .menu-group p {
-  align-self: flex-end;
-  font-size: 1rem;
+  align-self: flex-start;
+  font-size: 1.2rem;
+  padding-top: .25rem;
 }
 
 .menu-item p {
