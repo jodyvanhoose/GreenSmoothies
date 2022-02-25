@@ -44,6 +44,15 @@ a {
 
 /* Heading/navbar */
 
+header {
+  display: grid;
+
+  background-color: #f4f4f4;
+  position: fixed;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100vw;
+}
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -52,8 +61,11 @@ a {
   align-items: flex-start;
   background-color: #f4f4f4;
   color: #26AD1A;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
+
+  /* grid-column: 1 / 13; */
+
 }
 
 #logo {
@@ -108,7 +120,7 @@ a {
 #hamburger {
   position: absolute;
   top: .20rem;
-  right: 1rem;
+  right: 1.5rem;
   /* display: none; */
   border: none;
   background-color: #f4f4f4;
@@ -244,7 +256,7 @@ main {
 
 
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
 
   .navbar-links ul {
     flex-direction: row;
@@ -259,6 +271,7 @@ main {
   .navbar {
     flex-direction: row;
     align-items: flex-end;
+    grid-column: 2/12;
   }
 
   #hamburger {
