@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/styles.css">
+
   <title>Home | Green Smoothies</title>
 </head>
 
@@ -82,6 +86,7 @@
   </section>
 
 
+  <!-- menu -->
   <section id="menu" class="menu">
     <h2>Menu</h2>
     <div class="menu-group">
@@ -127,6 +132,8 @@
       <p>5.59</p>
     </div>
 
+
+    <!-- curent specials -->
     <div id="current-specials">
       <h2>OUR CURRENT SPECIALS</h2>
     </div>
@@ -158,12 +165,58 @@
       </div>
       <p>4.99</p>
     </div>
-
   </section>
 
-  <section>
+  <!-- social media -->
 
+  <section id="contact">
+    <div id="social-media">
+      <h2>Check us out on our social media</h2>
+      <div id="icons">
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram-square fa-3x"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
+      </div>
+
+      <!-- newsletter -->
+
+    </div>
+    <div id="newsletter">
+      <div class="grid-container">
+        <h2>Like coupons? Join our newsletter!</h2>
+        <form class="form" action="">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Enter first name" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Enter last name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter email address" required>
+          </div>
+          <div class="form-group" id="submit">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
   </section>
+
+  <!-- footer -->
+  <footer>
+    <div id="footer-container">
+      <p>
+        Phone: (606)555-5555
+      </p>
+      <p>Email: me@greensmoothies.com
+      </p>
+      <p>1234 Healthy Way Eastern, Ky 12345</p>
+    </div>
+    <p>Copyright &copy; 2022 | Green Smoothies</p>
+  </footer>
 
   <script src="app.js"></script>
 </body>
