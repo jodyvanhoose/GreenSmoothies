@@ -132,7 +132,7 @@ header {
 /* hero area */
 main {
   background-color: #e5e5e5;
-  background: url(/img/smoothie.jpg)no-repeat center center/cover;
+  background: url(../img/smoothie.jpg)no-repeat center center/cover;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -188,7 +188,7 @@ main {
 
 .section-b {
   background-color: #000;
-  background: url(/img/stevia.jpg) no-repeat center center/cover;
+  background: url(../img/stevia.jpg) no-repeat center center/cover;
   height: 30em;
 
 }
@@ -241,7 +241,7 @@ main {
 
 #current-specials {
   grid-column: 1 / span 12;
-  background: url(/img/beachSmoothie.jpg) no-repeat center center/cover;
+  background: url(../img/beachSmoothie.jpg) no-repeat center center/cover;
   height: 30rem;
 }
 
