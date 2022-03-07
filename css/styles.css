@@ -51,6 +51,7 @@ header {
   position: fixed;
   grid-template-columns: repeat(12, 1fr);
   width: 100vw;
+  z-index: 1;
 }
 
 .navbar {
@@ -155,10 +156,14 @@ main {
 
 /* about-cards */
 
+.section-a {
+  padding-top: 50px;
+}
+
 .card {
   text-align: center;
   background-color: #fff;
-  margin-bottom: 1em;
+  margin: 2em 0 1em;
   color: #333;
   padding: 1em;
 }
@@ -236,22 +241,21 @@ main {
 
 /* current specials */
 
-#current-specials {
+.current-specials-image {
   grid-column: 1 / span 12;
-  background: url(../img/beachSmoothie.jpg) no-repeat center center/cover;
+  background: url(../img/beachSmoothie.jpg) no-repeat bottom center/cover;
   height: 30rem;
 }
 
-#current-specials>h2 {
-  background-color: #26AD1A;
-  color: #fff;
-  padding: 1em 0;
+.current-specials {
+  color: #26AD1A;
+  padding: 1em 0 0;
 }
 
 
 /* social media */
 
-#social-media {
+.social-media {
   background-color: #c4c4c4;
   width: 100%;
   height: min-content;
@@ -259,27 +263,29 @@ main {
   text-align: center;
 }
 
-#social-media h2 {
+.social-media h2 {
   font-size: 2rem;
   color: #26AD1A;
 }
 
-#icons {
+.icons {
   text-align: center;
 }
 
-#social-media i {
+.social-media i {
   color: #333;
   padding: 2rem 2.5rem 0 2.5rem;
+  transition: all 500ms ease;
 }
 
-#social-media i:hover {
+.social-media i:hover {
   color: #26AD1A;
+  transform: scale(1.15);
 }
 
 
 /* newsletter */
-#newsletter {
+.newsletter {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   padding: 1.5em 0;
@@ -289,7 +295,7 @@ main {
   grid-column: 2 / 12;
 }
 
-#newsletter h2 {
+.newsletter h2 {
   text-align: center;
   padding: 2rem 0;
   font-size: 2rem;
@@ -438,7 +444,6 @@ footer p {
 
   .footer-container p:nth-of-type(1) {
     order: 1;
-
   }
 
   .footer-container p:nth-of-type(2) {
@@ -475,13 +480,18 @@ footer p {
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: all 500ms ease;
   }
 
   .card:hover {
-    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .3);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), inset 4px -4px 8px 0 rgba(38, 173, 26, .3), inset -4px 4px 8px 0 rgba(38, 173, 26, .3); */
+    box-shadow: 0 4px 16px 0 rgba(38, 173, 26, .5);
+    transform: scale(1.05);
+    /* border-radius: 5px; */
   }
 
   .card p {
     font-size: 1.3rem;
   }
+
 }
