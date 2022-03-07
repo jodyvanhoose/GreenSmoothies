@@ -161,7 +161,6 @@ main {
   margin-bottom: 1em;
   color: #333;
   padding: 1em;
-  /* box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3); */
 }
 
 .card:last-of-type {
@@ -283,6 +282,7 @@ main {
 #newsletter {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  padding: 1.5em 0;
 }
 
 .grid-container {
@@ -334,7 +334,7 @@ footer {
   height: min-content;
 }
 
-#footer-container {
+.footer-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -342,7 +342,7 @@ footer {
   padding: 1rem;
 }
 
-#footer-container p {
+.footer-container p {
   padding: 1rem;
   font-size: 1.8rem;
 }
@@ -427,6 +427,28 @@ footer p {
     grid-column: 1 / span 4;
   }
 
+  .footer-container {
+    flex-direction: row;
+    margin: 0 3.5rem;
+  }
+
+  .footer-container p {
+    font-size: 1.3rem;
+  }
+
+  .footer-container p:nth-of-type(1) {
+    order: 1;
+
+  }
+
+  .footer-container p:nth-of-type(2) {
+    order: 3;
+  }
+
+  .footer-container p:nth-of-type(3) {
+    order: 2;
+  }
+
 
 
 }
@@ -440,5 +462,26 @@ footer p {
 
   .grid-container {
     grid-column: 4 / 10;
+  }
+}
+
+@media (min-width: 1100px) {
+
+  .section-a {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 4em 8em;
+    padding: 0;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .3);
+  }
+
+  .card p {
+    font-size: 1.3rem;
   }
 }
