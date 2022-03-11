@@ -7,7 +7,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 85px;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -321,14 +321,11 @@ input:focus {
   box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
-.form-group input[type="submit"] {
-  width: fit-content;
-  padding: .5em 2em;
-}
 
 .form-group .btn {
-  padding: .5em;
+  padding: .5em 1.5em;
   border: 1px solid #26Ad1a;
+  font-weight: 500;
 }
 
 
@@ -489,10 +486,8 @@ footer p {
   }
 
   .card:hover {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), inset 4px -4px 8px 0 rgba(38, 173, 26, .3), inset -4px 4px 8px 0 rgba(38, 173, 26, .3); */
     box-shadow: 0 4px 16px 0 rgba(38, 173, 26, .5);
     transform: scale(1.05);
-    /* border-radius: 5px; */
   }
 
   .card p {
