@@ -56,4 +56,3 @@ smoothieBtn.addEventListener('click', () =>{
   
 
 
-console.log(smoothies[selection]);
