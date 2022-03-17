@@ -277,14 +277,37 @@ main {
 .smoothie-generator .btn {
   text-align: center;
   margin: 0 auto;
-  padding: .5em 1.5em;
+  padding: 1.2em 2em;
   border: 1px solid #26Ad1a;
   font-weight: 500;
 }
 
 .smoothie-generator #blender {
-  font-size: 2rem;
+  font-size: 4rem;
 }
+
+.smoothie-generator #blender:hover {
+  display: block;
+  animation: shake .09s ease-in-out .1s infinite alternate;
+}
+
+.small-blender {
+  font-size: 1.8rem;
+}
+
+
+
+@keyframes shake {
+  from {
+    transform: rotate(15deg);
+  }
+
+  to {
+    transform: rotate(-15deg);
+    transform-origin: center center;
+  }
+}
+
 
 
 /* social media */
@@ -355,13 +378,11 @@ input:focus {
   box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
-
 .form-group .btn {
   padding: .5em 1.5em;
   border: 1px solid #26Ad1a;
   font-weight: 500;
 }
-
 
 #submit {
   text-align: center;
@@ -414,8 +435,6 @@ footer p {
 
 
 }
-
-
 
 
 

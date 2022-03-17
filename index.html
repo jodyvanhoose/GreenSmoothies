@@ -9,26 +9,28 @@
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/blender-favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/styles.css">
-
   <title>Home | Green Smoothies</title>
 </head>
 
 <body id="home">
+
   <!-- header/navbar -->
+
   <header>
     <div class="navbar">
       <div id="logo">
         <span class="material-icons" id="blender">
           blender
         </span>
-
         <h1>
           Green <br>
           Smoothies
         </h1>
       </div>
+
       <!-- hamburger button -->
 
       <nav class="navbar-links" id="navbar-links">
@@ -40,14 +42,13 @@
         </ul>
       </nav>
       <button class="toggle-button" id="hamburger">&#9776</button>
-
     </div>
   </header>
 
 
   <!-- main landing page -->
-  <main id="hero">
 
+  <main id="hero">
     <div id="heroHeading">
       <h1>Check out&nbsp;our <br> healthy&nbsp;drinks!</h1>
       <a class="btn" href="#menu">Menu</a>
@@ -56,6 +57,7 @@
 
 
   <!-- About section -->
+
   <section id="about" class="section-a">
     <div class="card">
       <img src="img/not_interested_black_24dp.svg" alt="Circle with line through icon">
@@ -79,6 +81,9 @@
       </p>
     </div>
   </section>
+
+
+  <!-- section-b -->
 
   <section class="section-b">
     <h2 class="container">
@@ -182,11 +187,16 @@
     </div>
   </section>
 
+
+  <!-- Smoothie generator -->
+
   <section id="smoothie-generator" class="menu">
     <h2 id="smoothie-generator" class="menu-heading">Don't know which smoothie to get?</h2>
     <div class="smoothie-generator">
-      <p>No problem. Try our random smoothie generator! Just press the blender below.</p>
-      <button id="smoothie-btn" class="btn"><span class="material-icons" id="blender">
+      <p>No problem. Try our random smoothie generator! Just press the<span class="material-icons small-blender">
+          blender</span> below and let us blend something up for
+        you.</p>
+      <button id="smoothie-btn" class="btn"><span class="material-icons blend" id="blender">
           blender
         </span></button>
       <p id="show-selection"></p>
