@@ -41,14 +41,14 @@
           <li><a onclick="closeMenu()" href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <button class="toggle-button" id="hamburger">&#9776</button>
+      <button id="hamburger">&#9776;</button>
     </div>
   </header>
 
 
   <!-- main landing page -->
 
-  <main id="hero">
+  <main class="hero">
     <div id="heroHeading">
       <h1>Check out&nbsp;our <br> healthy&nbsp;drinks!</h1>
       <a class="btn" href="#menu">Menu</a>
@@ -86,7 +86,7 @@
   <!-- section-b -->
 
   <section class="section-b">
-    <h2 class="container">
+    <h2>
       Healthy doesn't have to taste bad
     </h2>
   </section>
@@ -190,8 +190,8 @@
 
   <!-- Smoothie generator -->
 
-  <section id="smoothie-generator" class="menu">
-    <h2 id="smoothie-generator" class="menu-heading">Don't know which smoothie to get?</h2>
+  <section class="menu">
+    <h2 class="menu-heading">Don't know which smoothie to get?</h2>
     <div class="smoothie-generator">
       <p>No problem. Try our random smoothie generator! Just press the<span class="material-icons small-blender">
           blender</span> below and let us blend something up for
@@ -222,18 +222,28 @@
       <div class="grid-container">
         <h2>Like coupons? Join our newsletter!</h2>
         <form class="form" action="">
+
           <div class="form-group">
-            <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name" placeholder="Enter first name" required>
+            <label for="first-name">First Name</label><span id="first-check"><i
+                class="fa-solid fa-circle-check"></i></span><span id="first-x"><i
+                class="fa-solid fa-circle-xmark danger"></i></span>
+            <input type="text" name="first-name" required id="first-name" placeholder="Enter first name">
           </div>
+
+
           <div class="form-group">
-            <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name" placeholder="Enter last name" required>
+            <label for="last-name">Last Name</label><span id="last-check"><i
+                class="fa-solid fa-circle-check"></i></span><span id="last-x"><i
+                class="fa-solid fa-circle-xmark danger"></i></span>
+            <input type="text" name="last-name" id="last-name" required placeholder="Enter last name">
           </div>
+
           <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email">Email</label><span id="email-check"><i class="fa-solid fa-circle-check"></i></span><span
+              id="email-x"><i class="fa-solid fa-circle-xmark danger"></i></span>
             <input type="email" name="email" id="email" placeholder="Enter email address" required>
           </div>
+
           <div class="form-group" id="submit">
             <button id="btn" class="btn">Submit</button>
           </div>

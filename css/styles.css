@@ -124,7 +124,7 @@ header {
 }
 
 /* hero area */
-main {
+.hero {
   background-color: #e5e5e5;
   background: url(../img/smoothie.jpg)no-repeat center center/cover;
   height: 100vh;
@@ -277,13 +277,13 @@ main {
 .smoothie-generator .btn {
   text-align: center;
   margin: 0 auto;
-  padding: 1.2em 2em;
+  padding-left: .3em;
   border: 1px solid #26Ad1a;
   font-weight: 500;
 }
 
 .smoothie-generator #blender {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .smoothie-generator #blender:hover {
@@ -359,7 +359,7 @@ main {
 }
 
 .form-group label {
-  padding-left: .5rem;
+  padding: 0 1rem 0 .5rem;
 }
 
 .form-group input {
@@ -386,6 +386,22 @@ input:focus {
 
 #submit {
   text-align: center;
+}
+
+/* form validation styling */
+
+
+.danger {
+  color: red;
+}
+
+#first-x,
+#last-x,
+#email-x,
+#first-check,
+#last-check,
+#email-check {
+  display: none;
 }
 
 
