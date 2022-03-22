@@ -2,7 +2,7 @@
 # GreenSmoothies
 Author: Jody VanHoose
 ## About
-Green Smoothies is a fictional website I created for a course in the boot camp [Code Kentucky](https://codekentucky.org/) in which I'm enrolled. The website is for Green Smoothies, a fictional smoothie store that specializes in healthy options. It was developed with mobile first in mind. 
+Green Smoothies is a fictional website I created for a course in the boot camp <a href="http://codekentucky.org/" target="_blank">Code Kentucky</a> in which I'm enrolled. The website is for Green Smoothies, a fictional smoothie store that specializes in healthy options. It was developed with mobile first in mind. 
 ### Key Features
 * Clean simple design
 * Mobile first approach
