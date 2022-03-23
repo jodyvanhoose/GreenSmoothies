@@ -47,3 +47,4 @@ ___
     * Set custom message and styling utilizing setCustomValidity() function
   * Utilized preventDefault() function to stop reload of page when submit button clicked
   * Change submit button to text \'Submitted\' when clicked
+  * Prints form information to console upon submit

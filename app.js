@@ -76,22 +76,22 @@ fName.addEventListener('invalid', () => {
   firstCheck.style.display = 'none';
 });
 
-const lastName = document.querySelector('#last-name');
+const lName = document.querySelector('#last-name');
 
-lastName.addEventListener('input', () =>{
-  lastName.setCustomValidity('');
-  lastName.checkValidity();
-  console.log(lastName.checkValidity());
-  if(lastName.validity.valid == true){
-    lastName.style.borderColor = '#26Ad1a';
+lName.addEventListener('input', () =>{
+  lName.setCustomValidity('');
+  lName.checkValidity();
+  console.log(lName.checkValidity());
+  if(lName.validity.valid == true){
+    lName.style.borderColor = '#26Ad1a';
     lastCheck.style.display = 'inline';
     lastX.style.display = 'none';
   }
 });
 
-lastName.addEventListener('invalid', () => {
-  lastName.setCustomValidity('My smoothie has a second name...');
-  lastName.style.borderColor = 'red';
+lName.addEventListener('invalid', () => {
+  lName.setCustomValidity('My smoothie has a second name...');
+  lName.style.borderColor = 'red';
   lastX.style.display = 'inline';
   lastCheck.style.display = 'none';
 });
@@ -106,8 +106,17 @@ email.addEventListener('input', () =>{
     email.style.borderColor = '#26Ad1a';
     emailCheck.style.display = 'inline';
     emailX.style.display = 'none';
+
+  // submit button success
+
     submitBtn.addEventListener('click', () => {
       submitBtn.textContent = 'Submitted';
+
+      // Outputs form info to console
+      console.log(`
+      First Name: ${fName.value}
+      Last Name: ${lName.value}
+      Email: ${email.value}`);
     });
   }
 });
@@ -119,4 +128,3 @@ email.addEventListener('invalid', () => {
   emailX.style.display = 'inline';
   emailCheck.style.display = 'none';
 });
-
