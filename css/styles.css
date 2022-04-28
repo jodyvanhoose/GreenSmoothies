@@ -286,10 +286,10 @@ header {
   font-size: 6rem;
 }
 
-.smoothie-generator #blender:hover {
+/* .smoothie-generator #blender:hover {
   display: block;
   animation: shake .09s ease-in-out .1s infinite alternate;
-}
+} */
 
 .small-blender {
   font-size: 1.8rem;
@@ -433,6 +433,14 @@ footer p {
 
 
 /* media querries */
+
+@media (hover: hover) {
+  .smoothie-generator #blender:hover {
+    display: block;
+    animation: shake .09s ease-in-out .1s infinite alternate;
+  }
+}
+
 
 @media (min-width: 600px) {
   .section-a {
