@@ -38,10 +38,10 @@ a {
   cursor: pointer;
 }
 
-.btn:hover {
+/* .btn:hover {
   background-color: #26AD1A;
   color: #fff;
-}
+} */
 
 /* Heading/navbar */
 
@@ -435,6 +435,12 @@ footer p {
 /* media querries */
 
 @media (hover: hover) {
+  .btn:hover {
+    background-color: #26AD1A;
+    color: #fff;
+  }
+
+
   .smoothie-generator #blender:hover {
     display: block;
     animation: shake .09s ease-in-out .1s infinite alternate;
