@@ -297,7 +297,7 @@ header {
 
 
 
-@keyframes shake {
+/* @keyframes shake {
   from {
     transform: rotate(15deg);
   }
@@ -306,7 +306,7 @@ header {
     transform: rotate(-15deg);
     transform-origin: center center;
   }
-}
+} */
 
 
 
@@ -438,6 +438,17 @@ footer p {
   .smoothie-generator #blender:hover {
     display: block;
     animation: shake .09s ease-in-out .1s infinite alternate;
+  }
+
+  @keyframes shake {
+    from {
+      transform: rotate(15deg);
+    }
+  
+    to {
+      transform: rotate(-15deg);
+      transform-origin: center center;
+    }
   }
 }
 
