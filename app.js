@@ -1,5 +1,7 @@
-import { menu } from './menu.js'
+import { mainMenu } from './mainMenu.js'
 import { contactForm } from './contactForm.js'
+
+const menu = [...mainMenu]
 
 // hamburger menu toggle
 const toggleButton = document.getElementById('hamburger');
@@ -11,6 +13,16 @@ toggleButton.addEventListener('click', () => {
 
 function closeMenu(){
   navbarLinks.classList.toggle('active');
+}
+
+// Setting random current specials - Never more than 4 at a time
+for(let i = 0; i < 4; i++){
+  let randomId = Math.floor(Math.random() * menu.length);
+  for(let item of menu){
+    if(randomId === item.id)
+    item.isCurrentSpecial = true
+  }
+  
 }
 
 
@@ -36,7 +48,7 @@ for(let item of menu){
           <h3>${item.item}</h3>
           <p>${item.description}</p>
         </div>
-        <p>${item.price}</p>
+        <p>${item.price - 1}</p>
       </div>
     `
   }
@@ -48,14 +60,14 @@ document.getElementById('specials-menu').innerHTML = specialMenuItems
 
 
 // Smoothie Generator
-const smoothieBtn = document.getElementById('smoothie-btn');
-const showSmoothie = document.getElementById('show-selection');
+const smoothieBtn = document.getElementById('smoothie-btn')
+const showSmoothie = document.getElementById('show-selection')
 
 smoothieBtn.addEventListener('click', () =>{
   let selection = Math.floor(Math.random() * menu.length);
   showSmoothie.innerText = `Try '${menu[selection].item}' you'll love it!
-  $${menu[selection].price}`;
-});
+  $${menu[selection].price}`
+})
 
 
 // contact form validation
