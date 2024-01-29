@@ -1,23 +1,16 @@
-import { mainMenu } from './mainMenu.js'
+import { menuData } from './menuData.js'
 import { contactForm } from './contactForm.js'
+import { mobileMenu } from './utils.js'
 
-const menu = [...mainMenu]
+const menu = [...menuData]
 const smoothieBtn = document.getElementById('smoothie-btn')
 const showSmoothie = document.getElementById('show-selection')
-const toggleButton = document.getElementById('hamburger');
-const navbarLinks = document.getElementById('navbar-links');
 let menuItems = ''
 let specialMenuItems = ''
 
 // hamburger menu toggle
 
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active');
-  });
-
-function closeMenu(){
-  navbarLinks.classList.toggle('active');
-}
+mobileMenu()
 
 // Setting random current specials - Never more than 4 at a time
 for(let i = 0; i < 4; i++){
@@ -30,7 +23,6 @@ for(let i = 0; i < 4; i++){
 
 
 // Setting menu items
-
 for(let item of menu){
   if(!item.isCurrentSpecial){
     menuItems += `

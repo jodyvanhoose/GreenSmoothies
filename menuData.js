@@ -1,4 +1,4 @@
-export const mainMenu = [
+export const menuData = [
   {
     id: 1,
     item: 'Spinach Special', 
