@@ -2,10 +2,14 @@ import { mainMenu } from './mainMenu.js'
 import { contactForm } from './contactForm.js'
 
 const menu = [...mainMenu]
-
-// hamburger menu toggle
+const smoothieBtn = document.getElementById('smoothie-btn')
+const showSmoothie = document.getElementById('show-selection')
 const toggleButton = document.getElementById('hamburger');
 const navbarLinks = document.getElementById('navbar-links');
+let menuItems = ''
+let specialMenuItems = ''
+
+// hamburger menu toggle
 
 toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
@@ -22,13 +26,10 @@ for(let i = 0; i < 4; i++){
     if(randomId === item.id)
     item.isCurrentSpecial = true
   }
-  
 }
 
 
 // Setting menu items
-let menuItems = ''
-let specialMenuItems = ''
 
 for(let item of menu){
   if(!item.isCurrentSpecial){
@@ -60,13 +61,16 @@ document.getElementById('specials-menu').innerHTML = specialMenuItems
 
 
 // Smoothie Generator
-const smoothieBtn = document.getElementById('smoothie-btn')
-const showSmoothie = document.getElementById('show-selection')
 
 smoothieBtn.addEventListener('click', () =>{
   let selection = Math.floor(Math.random() * menu.length);
-  showSmoothie.innerText = `Try '${menu[selection].item}' you'll love it!
-  $${menu[selection].price}`
+  if(menu[selection].isCurrentSpecial){
+    showSmoothie.innerText = `Try '${menu[selection].item}' you'll love it!
+    $${menu[selection].price - 1}`
+  }else{
+    showSmoothie.innerText = `Try '${menu[selection].item}' you'll love it!
+    $${menu[selection].price}`
+  }
 })
 
 
