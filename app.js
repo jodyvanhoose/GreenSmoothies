@@ -9,10 +9,10 @@ let menuItems = ''
 let specialMenuItems = ''
 
 // hamburger menu toggle
-
 mobileMenu()
 
-// Setting random current specials - Never more than 4 at a time
+
+// // Setting random current specials - Never more than 4 at a time
 for(let i = 0; i < 4; i++){
   let randomId = Math.floor(Math.random() * menu.length);
   for(let item of menu){

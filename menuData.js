@@ -30,7 +30,7 @@ export const menuData = [
   {
     id: 5,
     item: 'Columbia Gold', 
-    description: 'CBD infused dolor sit amet.',
+    description: 'Lorem ipsum dolor sit amet.',
     price: 7.99,
     isCurrentSpecial: false
   },
