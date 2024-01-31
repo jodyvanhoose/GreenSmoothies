@@ -1,10 +1,8 @@
 import { menuData } from './menuData.js'
 import { contactForm } from './contactForm.js'
-import { mobileMenu } from './utils.js'
+import { mobileMenu, smoothieGenerator } from './utils.js'
 
 const menu = [...menuData]
-const smoothieBtn = document.getElementById('smoothie-btn')
-const showSmoothie = document.getElementById('show-selection')
 let menuItems = ''
 let specialMenuItems = ''
 
@@ -52,19 +50,7 @@ document.getElementById('menu-group').innerHTML = menuItems
 document.getElementById('specials-menu').innerHTML = specialMenuItems
 
 
-// Smoothie Generator
-
-smoothieBtn.addEventListener('click', () =>{
-  let selection = Math.floor(Math.random() * menu.length);
-  if(menu[selection].isCurrentSpecial){
-    showSmoothie.innerText = `Try '${menu[selection].item}' you'll love it!
-    $${menu[selection].price - 1}`
-  }else{
-    showSmoothie.innerText = `Try '${menu[selection].item}' you'll love it!
-    $${menu[selection].price}`
-  }
-})
-
+smoothieGenerator()
 
 // contact form validation
 contactForm()

@@ -1,12 +1,16 @@
+import { menuData } from "./menuData.js";
+
+const menu = [...menuData]
+
+
+// Mobile hamburger menu logic
 function mobileMenu(){
   const toggleButton = document.getElementById('hamburger');
   const navbarLinks = document.getElementById('navbar-links');
 
-  console.log(toggleButton)
   toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
   });
-
 
   document.addEventListener('DOMContentLoaded', function () {
     // Get all anchor elements inside the navbar
@@ -23,6 +27,23 @@ function mobileMenu(){
   });
 }
 
+// Smoothie Generator logic
+function smoothieGenerator(){
+  const smoothieBtn = document.getElementById('smoothie-btn')
+  const showSmoothie = document.getElementById('show-selection')
 
-export { mobileMenu }
+  smoothieBtn.addEventListener('click', () =>{
+    let selection = Math.floor(Math.random() * menu.length);
+    if(menu[selection].isCurrentSpecial){
+      showSmoothie.innerText = `Try '${menu[selection].item}' you'll love it!
+      $${menu[selection].price - 1}`
+    }else{
+      showSmoothie.innerText = `Try '${menu[selection].item}' you'll love it!
+      $${menu[selection].price}`
+    }
+  })
+}
+
+
+export { mobileMenu, smoothieGenerator }
 
